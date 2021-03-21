@@ -1,0 +1,124 @@
+
+body{
+  font-family: 'Mali', cursive;
+  margin: 0 ;
+  padding: 0;
+  }
+
+#home{
+  background-image: url(https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fHdlYnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+#header {
+  background-image: linear-gradient(to bottom right, rgb(3, 3, 3),rgb(100, 90, 45));
+  position:fixed;
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  }
+  #header>div{    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+  }
+
+#logo{
+  color: rgb(241, 198, 6);
+  font-size:40px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+}
+#nav{
+  display: inline-block;
+    width: 80%;
+    text-align: right
+}
+.main-nav-link{
+  margin: 0 ;
+  list-style: none;
+  
+ }
+a:link {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgb(255, 210, 7);
+}
+.nav-link{
+  display: inline-block;
+  padding-left: 20px;  
+}
+#home{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-align: center;
+  height: 845px;
+ 
+}
+svg text{
+  stroke:black;
+  font-size: 40px;
+  font-weight: 800;
+  stroke-width: 3;
+  animation: textAnimate 3s infinite alternate;
+}
+@keyframes textAnimate{
+  0%{
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+  }
+  100%{
+    stroke-dasharray: 50 0%;
+    stroke-dashoffset: -20%;
+  }
+}
+#hello{
+  font-family: monospace;
+}
+#about{
+  margin: 0;
+  color: rgb(241, 198, 6);
+  font-size: 20px;
+  font-weight: bolder;
+  background-image: url(https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjF8fHdlYnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 845px;
+}
+.title{
+  margin: 0;
+  font-size: 40px;
+  text-align: center;
+  font-family: monospace;
+  font-weight: 900;
+}
+#desc{
+  text-align: left;
+  margin-left: 20px;
+}
+#img{
+  height: 200px;
+  width: 200px;
+  float: right;
+  margin: 0px 20px 0px 20px;
+  border-radius: 50%;
+}
+
+
+.projects{
+  width: 30%;
+  float: left;
+  padding: 20px;
+  border-radius: 30%;
+  
+}
