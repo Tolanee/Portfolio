@@ -1,26 +1,28 @@
-
-body{
-  font-family: 'Mali', cursive;
-  margin: 0 ;
-  padding: 0;
-  }
-
-#home{
-  background-image: url(https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fHdlYnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+  
+#home{
+  min-width: 100%;
+  min-height: 100vh;
+}
+ 
 
 #header {
-  background-image: linear-gradient(to bottom right, rgb(3, 3, 3),rgb(100, 90, 45));
+  background-color: white;
   position:fixed;
   min-width: 100%;
+  height: 10vh;
   display: flex;
   flex-direction: row;
   align-items: center;
-  
-  }
+   }
+   
   #header>div{    
     display: flex;
     flex-direction: row;
@@ -29,7 +31,7 @@ body{
   }
 
 #logo{
-  color: rgb(241, 198, 6);
+  
   font-size:40px;
   font-weight: bolder;
   display: flex;
@@ -37,9 +39,10 @@ body{
   align-items: center; 
 }
 #nav{
+  margin-right: 30px;
   display: inline-block;
     width: 80%;
-    text-align: right
+   text-align: right;
 }
 .main-nav-link{
   margin: 0 ;
@@ -48,27 +51,33 @@ body{
  }
 a:link {
   text-decoration: none;
-  font-size: 30px;
+  letter-spacing: 3px;
+  font-size: 20px;
   font-weight: bolder;
-  color: rgb(255, 210, 7);
+  color: rgb(7, 7, 31);
 }
 .nav-link{
   display: inline-block;
-  padding-left: 20px;  
+  padding-right: 30px;
+    
 }
-#home{
+
+
+#svg{
+  color: rgb(7, 7, 31);
+  font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   font-weight: bolder;
   text-align: center;
-  height: 845px;
+  height: 100vh;
  
 }
 svg text{
-  stroke:black;
+  stroke:rgb(7, 7, 31);
   font-size: 40px;
-  font-weight: 800;
-  stroke-width: 3;
-  animation: textAnimate 3s infinite alternate;
+  font-weight: 700;
+  stroke-width: 0.5px;
+  animation: textAnimate 4s infinite alternate;
 }
 @keyframes textAnimate{
   0%{
@@ -81,58 +90,55 @@ svg text{
   }
 }
 #hello{
-  font-family: monospace;
+  font-family: 'Montserrat', sans-serif;
 }
 #about{
-  margin: 0;
-  color: rgb(241, 198, 6);
-  font-size: 20px;
-  font-weight: bolder;
-  background-image: url(https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjF8fHdlYnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 845px;
+  color: rgb(7, 7, 31);
+  height:100vh;
 }
 .title{
-  margin: 0;
-  font-size: 40px;
-  text-align: center;
-  font-family: monospace;
-  font-weight: 900;
+  padding-top: 1em;
+  color: transparent;
+  font-family: 'Rubik Mono One', sans-serif;
+  -webkit-text-stroke:2px rgb(7, 7, 31);
+  font-size: 10rem;
+  stroke-width: 17rem;
 }
+.title-p{
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid black;
+  color: transparent;
+  font-family: 'Rubik Mono One', sans-serif;
+  -webkit-text-stroke:2px rgb(7, 7, 31);
+  font-size: 8rem;
+  stroke-width: 17rem;
+}
+
 #desc{
   text-align: left;
   margin-left: 20px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
 }
 .img-div{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 50%;
-  display: flex;
-  flex-direction: row;
-  
+ 
 }
 #img{
   height: 300px;
-  width: 200px;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
- border-radius: 50%;
+  width: 100%;
+  
+ 
 }
 #projects{
-  background-image: url(https://images.unsplash.com/photo-1497005367839-6e852de72767?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjB8fHdlYnxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  
   margin: 0 auto;
   color:black;
   font-size: 20px;
   font-weight: bolder;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 845px;
+  
   
 }
 
@@ -169,4 +175,57 @@ svg text{
 span{
   margin: 0 30px 0 30px;
   
+}
+@media screen and (max-width: 768px){
+  #header {
+    width: 18%;
+    margin-left: 2em;
+    }
+    
+    #logo{
+      width:58%;
+      height: 10vh;
+    }
+    .line{
+      width: 25px;
+      height: 3px;
+      background:black;
+      margin: 5px;}
+      nav{
+        position: relative;
+      }
+      .burger{
+        cursor: pointer;
+        top: 50%;
+        z-index: 2;
+      }
+  
+    .main-nav-link{
+      background: #6f6f89;
+      position: fixed;
+      height:100vh;
+      width:100% ;
+      flex-direction: column;
+      clip-path: circle(50px at 90% -10% );
+      -webkit-clip-path: circle(50px at 90% -10% );
+      transition: all 1s ease-out
+    }
+    .main-nav-link.open{
+      clip-path: circle(1000px at 90% -10% );
+      -webkit-clip-path: circle(1000px at 90% -10% );
+    }
+    .nav-link{
+      color: white;
+    }
+
+    #svg {
+      margin-top: 12rem;
+      color: rgb(7, 7, 31);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
+      font-weight: bolder;
+      text-align: center;
+      height: 100vh;
+    }
+     
 }
