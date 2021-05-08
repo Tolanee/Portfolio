@@ -168,10 +168,11 @@ svg text{
 }
 
 #contact{
-  width: 50%;
+  width: 100%;
   height: 100vh;
 }
 .contact-me{
+  flex: 2;
   font-size: 40px;
   font-weight: bolder;
   color: rgb(7, 7, 31);
@@ -255,6 +256,9 @@ color: rgb(7, 7, 31);
     .card3 img{
       width: 100%;
       height: 100%;
+    }
+    #contact{
+      width: 100%;
     }
     .contact-me{
       font-size: 20px;
