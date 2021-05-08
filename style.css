@@ -126,7 +126,7 @@ svg text{
   white-space: pre-wrap;
 }
 .card3{
-  margin-right:2em;
+  margin: auto;
   margin-bottom: 1em;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
@@ -245,7 +245,6 @@ color: rgb(7, 7, 31);
       letter-spacing: 0.5px;
     }
     .card3{
-      margin-right: 0;
       width: 90%;
     }
     .card4{
