@@ -245,7 +245,7 @@ color: rgb(7, 7, 31);
       letter-spacing: 0.5px;
     }
     .card3{
-      margin: auto;
+      margin-right: 0;
       width: 90%;
     }
     .card4{
