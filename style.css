@@ -19,9 +19,10 @@ body{
   position:fixed;
   min-width: 100%;
   height: 10vh;
-  display: flex;
   flex-direction: row;
   align-items: center;
+  display: flex;
+  justify-content: space-around;
    }
    
    .logo-container, .main-nav-link{
@@ -33,11 +34,11 @@ body{
   .logo-container{
     width: 30%;
     justify-content: space-around;
-    height: 10vh;
+    height: 100%;
   }
 
 #logo{
-  width: 60%;
+  width: 100%;
   height: 100%;
   font-weight: bolder;
   display: flex;
@@ -54,7 +55,7 @@ body{
   list-style: none;
   height: 100%;
   align-items: center;
-  margin-left: auto;
+  margin-left: 6em;
   justify-content: space-around;
   
  }
@@ -125,7 +126,7 @@ svg text{
   line-height: 2;
   white-space: pre-wrap;
 }
-.card3{
+.card2{
   margin: auto;
   margin-bottom: 1em;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -219,18 +220,51 @@ color: rgb(7, 7, 31);
 @media screen and (max-width: 768px){
   #header {
     width: 100%;
-    margin-left: 2em;
     }
     
-    #logo{
+  #logo{
     height: 100%;
+    width: 100%;
     }
+  nav{
+    position: relative;
+  }
 
-    #svg {
+  .line{
+      width: 25px;
+      height: 3px;
+      background:rgb(7, 7, 31);
+      margin: 5px;
+  }
+  .burger{
+    cursor: pointer;
+    top: 50%;
+    z-index: 2;
+  }
+
+  .main-nav-link{
+    background: #6f6f89;
+    position: fixed;
+    height:100vh;
+    width:100% ;
+    flex-direction: column;
+    clip-path: circle(50px at 90% -10% );
+    -webkit-clip-path: circle(50px at 90% -10% );
+    transition: all 1s ease-out
+  }
+  .main-nav-link.open{
+    clip-path: circle(1000px at 90% -10% );
+    -webkit-clip-path: circle(1000px at 90% -10% );
+  }
+  .nav-link{
+    color:rgb(7, 7, 31);
+  }
+
+  #svg {
      padding-top: 12rem;
       color: rgb(7, 7, 31) ;
       font-family: 'Montserrat', sans-serif;
-      font-size: 2.5rem;
+      font-size: 3rem;
       font-weight: bolder;
       text-align: center;
       height: 100vh;
