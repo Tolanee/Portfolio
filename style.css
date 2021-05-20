@@ -203,6 +203,9 @@ svg text{
   color: rgb(7, 7, 31);
   padding-bottom: 1em;
 }
+.contact-icons{
+  margin: auto;
+}
 
 .icon{
   padding-left: 1em;
